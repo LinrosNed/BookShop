@@ -1,0 +1,29 @@
+.sidebar-collection__title {
+  color: rgba(1, 1, 1, .87);
+  font-size: 12px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.sidebar-block a{
+  color: rgba(1,1,1,.56);
+  font-size: 12px;
+  font-weight: 700;
+  padding: 2px;
+}
+.sidebar-base__list a{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.sidebar-collection__list a{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.sidebar-icon{
+  color: brown;
+  font-size: 18px;
+} 
+.sidebar-discount__list{
+  border-bottom: 1px solid #ddd;
+}

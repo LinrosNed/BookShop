@@ -1,0 +1,149 @@
+.book {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 6px 8px;
+}
+.book__header {
+  display: flex;
+  gap: 20px;
+}
+.book__img {
+  position: relative;
+  max-width: 220px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  overflow: hidden;
+}
+.bookmark-label {
+  display: none;
+}
+
+.book.in-bookmark .bookmark-label {
+  display: flex;
+  position: absolute;
+  width: 10%;
+  height: 30%;
+  background-color: #ffcc00;
+  top: 0;
+  left: 0;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.12), inset 0 2px 3px rgba(0, 0, 0, 0.24);
+  z-index: 1;
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 100%, 0 80%);
+}
+
+.book__img img {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  width: 100px;
+  height: auto;
+}
+
+.book__description_header {
+  padding: 8px 5px;
+  font-size: 20px;
+  font-weight: 500;
+}
+.book__description_text {
+  color: #4d4d4d;
+  line-height: 1.45em;
+}
+
+.star-bookDetails {
+  cursor: pointer;
+  color: #ccc;
+  transition: color 0.3s ease;
+}
+
+.star-bookDetails:hover {
+  color: #ffcc00;
+}
+
+.star-bookDetails.filled {
+  color: #ffcc00;
+}
+
+.book__title {
+  color: #111;
+  font-family: "Bookerly Regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  line-height: 1.25;
+  font-weight: 400;
+}
+
+.book__author {
+  color: #039;
+  font-weight: bold;
+  letter-spacing: 0;
+}
+
+.book__publisher {
+  color: #666;
+  font-family: "Amazon Ember", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  line-height: 1.428;
+  letter-spacing: 0;
+  word-spacing: 0;
+  -webkit-text-size-adjust: 100%;
+}
+
+.book__download_title {
+  font-size: 12px;
+  color: #666;
+  margin-bottom: 40px;
+}
+
+.book__download_btn {
+  display: flex;
+  gap: 20px;
+}
+
+.book__download_btn-load {
+  color: #fff;
+  border-radius: 4px;
+  font-weight: 400;
+  padding: 7px 10px;
+  background-color: #dc2a2a !important;
+  border-color: #c7002c;
+  border-width: 1px;
+  border-style: solid;
+  min-width: 135px;
+  text-shadow: none;
+}
+
+.book__download_btn-bookmark {
+  color: #666;
+  border-radius: 4px;
+  font-weight: 400;
+  padding: 7px 10px;
+  background-color: transparent;
+  border-color: #ddd;
+  border-width: 1px;
+  border-style: solid;
+  min-width: 135px;
+  text-shadow: none;
+}
+
+.book__comment-block {
+  display: flex;
+  gap: 40px;
+  border-top: 1px solid #ddd;
+  padding-top: 20px;
+}
+
+.comment-block__reviews {
+  flex: 0 0 280px;
+}
+.comment-block__comments {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.comment-block__comments-me {
+  border-bottom: 1px solid #ddd;
+}

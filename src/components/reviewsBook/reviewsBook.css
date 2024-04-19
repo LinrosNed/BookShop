@@ -1,0 +1,17 @@
+.reviews-b {
+  max-width: 275px;
+  width: 100%;
+}
+.reviews__col{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.reviews__head{
+  display: flex;
+  justify-content: space-between;
+}
+.reviews__top {
+  display: flex;
+  gap: 10px;
+}

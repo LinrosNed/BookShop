@@ -1,0 +1,13 @@
+
+ Proxy Active 
+
+Proxy Url: https://test.vim-store.ru
+Proxy Partial: proxy
+PORT: 4000
+Credentials: false
+Origin: *
+
+To start using the proxy simply replace the proxied part of your url with: http://localhost:4000/proxy
+
+Request Proxied -> /
+^C

@@ -1,0 +1,13 @@
+.start-page__carousel{
+  padding: 0 5px;
+}
+.start-page__second-block h2{
+  display: flex;
+  justify-content: center;
+  background-color: #f7f7f7;
+  padding: 6px 0;
+}
+.booklist{
+  display: flex;
+  justify-content: center;
+}
