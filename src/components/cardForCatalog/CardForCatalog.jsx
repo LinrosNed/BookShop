@@ -11,7 +11,6 @@ import Button from '@mui/material/Button';
 export function CardCatalog({ img, id, title, author, price, setBasketDeleteBook }) {
 
   const { favorite } = useSelector((state) => state.infoBookReducer);
-
   const [orFavorite, setOrFavorite] = useState(false);
 
   function isBookInFavorites(id, favorites) {
@@ -50,14 +49,15 @@ export function CardCatalog({ img, id, title, author, price, setBasketDeleteBook
       </NavLink>
       <div className="cardCatalog__item">
         <div className="cardCatalog__title">{title}</div>
-        <div className="cardCatalog__author">{author}</div>
+        <NavLink>
+          <div className="cardCatalog__author">{author}</div>
+        </NavLink>
         <div className="cardCatalog__rating">$ {price}</div>
       </div>
       {!setBasketDeleteBook ? null : <Button size="small" variant="contained" onClick={deleteBookOrBasket} >Убрать из корзины</Button>}
       <div className="cardCatalog__bookmark-label">
-          <Favorites orFavorite={orFavorite} />
-        </div>
-        
+        <Favorites orFavorite={orFavorite} />
+      </div>
     </div>
   )
 };

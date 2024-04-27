@@ -1,14 +1,16 @@
-.sidebar-collection__title {
-  color: rgba(1, 1, 1, .87);
-  font-size: 12px;
-  font-weight: 700;
-  margin-bottom: 10px;
-}
+.MuiTreeItem-label,
 .sidebar-block a{
   color: rgba(1,1,1,.56);
-  font-size: 12px;
-  font-weight: 700;
+  font-size: 1rem;
+  font-weight: bold !important;
   padding: 2px;
+}
+.css-1txipvs-MuiTreeItem-content.Mui-selected{
+  background-color: transparent !important;
+}
+.css-1txipvs-MuiTreeItem-content{
+  padding: 0 8px !important;
+  border: none !important;
 }
 .sidebar-base__list a{
   display: flex;

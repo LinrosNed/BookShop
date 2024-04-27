@@ -42,7 +42,8 @@
 }
 
 .cardCatalog__img {
-  display: block;
+  display: flex;
+  justify-content: center;
 }
 
 .cardCatalog__bookmark-label {
@@ -54,6 +55,7 @@
 .cardCatalog__img img {
   width: 160px;
   height: auto;
+  max-height: 240px;
 }
 
 .cardCatalog__title {

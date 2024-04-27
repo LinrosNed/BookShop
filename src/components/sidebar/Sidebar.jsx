@@ -1,22 +1,11 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import "./sidebar.css";
+import TreeView from "../treeView/TreeView";
 
 
 function Sidebar({ genres }) {
 
-  const listGenres = (genres) => {
-    if (Array.isArray(genres) && genres.length > 0) {
-      return genres.map(genre => (
-        <li key={genre.id}>
-          <NavLink to={`/genre/${genre.id}`}>
-            <span>{genre.name}</span>
-          </NavLink>
-        </li>
-      ))
-    }
-  };
-  
   return (
     <aside className="sidebar-block">
       <ul className="sidebar-discount__list">
@@ -42,9 +31,9 @@ function Sidebar({ genres }) {
             </NavLink>
           </li>
           <li>
-                <ul className="sidebar-genres">
-                  {listGenres(genres)}
-                </ul>
+            <ul className="sidebar-genres">
+              <TreeView genres={genres} />
+            </ul>
           </li>
         </ul>
       </nav>
